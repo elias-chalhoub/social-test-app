@@ -17,7 +17,12 @@ https://laravel.com/docs/9.x/sail
 	- Run `alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'`
 - Run `sail up -d`
 - Run `sail artisan key:generate --ansi`
+- Run `sail artisan migrate:fresh --seed`
 - Run `yarn run dev`
+
+If you got database connection errors (caused by old volumes):
+`sail down -v`
+`sail up -d`
 
 ## About
 
