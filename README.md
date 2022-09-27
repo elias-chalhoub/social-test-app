@@ -3,12 +3,20 @@
 
 ## Install the project.
 
+##### Docker should be installed to use Laravel sail:
+https://laravel.com/docs/9.x/sail
+
+##### Project requires PHP V8.1^
+
 - Clone the repo https://github.com/elias-chalhoub/social-test-app
+- Copy .env.example to .env and update values to meet your needs.
 - Run composer install
+- Use node version 16^ maybe with nvm use 16
 - Run yarn install
 - The project uses sail so creating alias will make life easier:
 	- Run alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 - Run sail up -d
+- Run sail artisan key:generate --ansi
 - Run yarn run dev
 
 ## About
@@ -19,3 +27,6 @@ Project is estimated to be done within 4 hours, but to do it as it should be it 
 ## TODO
 * Add more inline docs.
 * Implementation of backend and frontend tests.
+
+### Note
+This app has no admin panel, just register as a new user, navigate to users and start following some of them.
